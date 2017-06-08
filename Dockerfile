@@ -7,5 +7,5 @@ RUN mkdir -p /root/.OpenMRS/modules \
     && mv /root/referenceapplication/* /root/.OpenMRS/modules/ \
     && rm -rf /root/referenceapplication
 
-# This contains modules
-# VOLUME /root/.OpenMRS # Done already in openmrs-platform
+# This now contains modules
+VOLUME /root/.OpenMRS 
